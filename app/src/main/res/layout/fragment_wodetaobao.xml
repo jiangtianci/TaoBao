@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+     >
+    <LinearLayout
+        android:id="@+id/wo_hander"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FB1761"
+        >
+        <TextView
+            android:id="@+id/wo_shezhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="20sp" />
+    </LinearLayout>
+<ScrollView
+    android:layout_below="@+id/wo_hander"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/wo_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+<LinearLayout
+    android:id="@+id/wo_ll"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#FB1761"
+      android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <ImageView
+        android:id="@+id/wo_tou"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="150dp"
+        android:src="@drawable/f001"
+        />
+<TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="昵称"
+    android:textSize="25sp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="155dp"
+    />
+
+</LinearLayout>
+        <GridView
+            android:id="@+id/wo_fenlei"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/wo_ll"
+            android:numColumns="3">
+
+        </GridView>
+        <TextView
+            android:id="@+id/wo_wode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的订单"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_below="@+id/wo_fenlei"
+            />
+        <TextView
+            android:id="@+id/wo_chakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看更多订单 >"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/wo_fenlei"/>
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#000"
+            android:layout_below="@+id/wo_chakan"/>
+        <GridView
+            android:id="@+id/wo_gridview1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:numColumns="5"
+            android:layout_below="@+id/wo_wode"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        </GridView>
+        <TextView
+            android:id="@+id/wo_wode1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="必备工具"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_below="@+id/wo_gridview1"
+            />
+        <TextView
+            android:id="@+id/wo_chakan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看全部工具 >"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/wo_gridview1"/>
+        <View
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#000"
+            android:layout_below="@+id/wo_chakan1"/>
+        <GridView
+            android:id="@+id/wo_gridview2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/wo_wode1"
+            android:numColumns="5"
+            >
+
+        </GridView>
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+</RelativeLayout>
